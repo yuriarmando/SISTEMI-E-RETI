@@ -8,8 +8,8 @@ def addressCheck(string):
             ip.append(int(field[index]))
         except:
             print("\n ----------------------------------------------")
-            print("\n ATTENZIONE")
-            print("\n NUMERO NON VALIDO")
+            print("\n WARNING")
+            print("\n the number entered is not valid")
             print("\n ----------------------------------------------")
     for index,_ in enumerate(ip):
         if ip[index] < 0:
@@ -27,8 +27,8 @@ def maskCheck(string):
         mask=int(string)
     except:
         print("\n ----------------------------------------------")
-        print("\n ATTENZIONE")
-        print("\n NUMERO NON VALIDO")
+        print("\n WARNING")
+        print("\n the number entered is not valid")
         print("\n ----------------------------------------------")
         mask=24
     if (mask < 1):
